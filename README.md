@@ -1,8 +1,8 @@
-# hack_ranker
+# hacker_rank
 
 ###### tags: `hack`, `hack_ranker`, `code`
 
-[個人 hack Ranker 筆記](https://hackmd.io/@zz8yeJXcQYOjqL6CsPNdlg/rJD6sLWeh)
+[個人 Hacker Rank 筆記](https://hackmd.io/@zz8yeJXcQYOjqL6CsPNdlg/rJD6sLWeh)
 
 # Solved
 - [X] plus_minus
