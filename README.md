@@ -16,6 +16,13 @@ Day2
 - [X] diagonal_difference
 - [X] counting_sort_1
 
+#### 編輯環境
+
+> 在 Win10，使用 VSCode 編輯與編譯，使用 Python Extension Debug 跟測試
+
+![VSCode](https://i.imgur.com/C8l3AoW.png)
+
+
 #### 取得當前資料夾名稱
 ```python==
 fold_path = os.path.abspath(os.getcwd())
