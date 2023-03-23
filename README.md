@@ -37,9 +37,9 @@ Day4
 - [ ] mock - 
 
 Day5
-- [ ] merge_two_sorted_linked_lists
-- [ ] queue_use_two_stack
-- [ ] balance_bracket
+- [X] merge_two_sorted_linked_lists
+- [X] queue_use_two_stack
+- [X] balance_bracket
 - [ ] mock - 
 
 Day6 
@@ -176,6 +176,14 @@ def f(a, b):
 
 print(f(120, 24))
 ```
+##### 考古題練習
+
+- [ ] 1. balance or Not
+- [ ] 2. linked list creation
+- [ ] 3.
+- [ ] 4.
+
+
 
 ##### Interview Question
 
