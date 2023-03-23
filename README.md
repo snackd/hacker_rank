@@ -28,30 +28,30 @@ Day3
 - [X] zig_zag_zequence
 - [X] tower_breakers
 - [X] caesar_cipher
-- [ ] mock - 
+- [ ] mock - palindrome_index
 
 Day4
 - [X] grid_challenge
 - [X] recusion_digit_num 
 - [X] [new_year_choas](https://csanim.com/tutorials/hackerrank-solution-new-year-chaos)
-- [ ] mock - 
+- [X] mock - truck_tour
 
 Day5
 - [X] merge_two_sorted_linked_lists
 - [X] queue_use_two_stack
 - [X] balance_bracket
-- [ ] mock - 
+- [X] mock - pairs
 
 Day6 
-- [ ] simple_text_editor
-- [ ] lego_blocks
-- [ ] jesse_and_cookies
-- [ ] mock - 
+- [X] simple_text_editor
+- [X] lego_blocks
+- [X] jesse_and_cookies
+- [X] mock - Breadth First Search_Shortest Reach
 
 Day7
-- [ ] tree_preorder_traversal
-- [ ] tree_huffman_decoding
-- [ ] no_prefix_set
+- [X] tree_preorder_traversal
+- [X] tree_huffman_decoding
+- [X] no_prefix_set
 
 #### 編輯環境
 
@@ -185,6 +185,12 @@ print(f(120, 24))
 
 
 
+##### 資料結構記錄
+Prefix 前序 ( 中 左 右 )
+Infix 中序 ( 左 中 右 )
+Postfix 後序 ( 左 右 中 )
+
+記法: 看中的位置，先左在右。
 ##### Interview Question
 
 時間複雜度(time complexity)和空間複雜度(space complexity)
