@@ -191,6 +191,7 @@ Infix 中序 ( 左 中 右 )
 Postfix 後序 ( 左 右 中 )
 
 記法: 看中的位置，先左在右。
+
 ##### Interview Question
 
 時間複雜度(time complexity)和空間複雜度(space complexity)
@@ -200,22 +201,81 @@ Postfix 後序 ( 左 右 中 )
 
 > algorithm
 1.  sorting 
-2.  BST
-3.  stack
-4.  queue
-5.  binary tree
+    - [ ] [insertsort](http://alrightchiu.github.io/SecondRound/comparison-sort-insertion-sortcha-ru-pai-xu-fa.html)
+    - [ ] [quicksort](http://alrightchiu.github.io/SecondRound/comparison-sort-quick-sortkuai-su-pai-xu-fa.html)
+    - [ ] [mergesort](http://alrightchiu.github.io/SecondRound/comparison-sort-merge-sorthe-bing-pai-xu-fa.html)
+    - [ ] [heapsort](http://alrightchiu.github.io/SecondRound/comparison-sort-heap-sortdui-ji-pai-xu-fa.html)
+2.  BST ([Binary Search Tree](https://pjchender.dev/dsa/dsa-bst/))
+3.  stack (FILO)
+4.  queue (FIFO)
+5.  [binary tree](https://web.ntnu.edu.tw/~algo/BinaryTree.html)
 6.  hash map 
 
+BFS (廣度搜尋法)
+DFS (深度搜尋法)
 
 > HTTP protocol 流程和 package format
+1. 對網址進行DNS域名解析，得到對應的IP地址
+2. 根據這個IP，找到對應的服務器，發起TCP的三次握手
+3. 建立TCP連接後發起HTTP請求
+4. 服務器響應HTTP請求，瀏覽器得到html代碼
 
+5. 瀏覽器解析html代碼，並請求html代碼中的資源（如js、css、圖片等）（先得到html代碼，才能去找這些資源）
+6. 瀏覽器對頁面進行渲染呈現給用戶
+7. 服務器關閉關閉TCP連接
 > cookie
 
+使用者瀏覽網站時由網路伺服器建立並由使用者的網頁瀏覽器存放在使用者電腦或其他裝置上的小文字檔
+
 > Linux
-1. 查看記憶體
-2. network package
-3. service port
-4. process
+
+[ShellScipt 指令紀錄](https://hackmd.io/@zz8yeJXcQYOjqL6CsPNdlg/BJA0hWgxh)
+
+1. [查看記憶體](https://www.ltsplus.com/linux/linux-check-ram-usage-spec)
+```
+free
+free -g
+free -m
+cat /proc/meminfo
+ps -eo pid,ppid,cmd,%mem,%cpu --sort=-%mem | head
+```
+2. [network package](https://www.jinnsblog.com/2020/12/linux-netstat-network-status.html)
+```
+netstat -at //TCP
+netstat -au //UDP
+
+主機、連接埠
+netstat -at --numeric-ports
+netstat -atn 
+
+路由表
+netstat -rn
+
+網卡
+netstat -i
+```
+3. [service port](https://www.ltsplus.com/linux/3-way-check-linux-listen-port)
+```
+yum install lsof
+lsof -i -P -n | grep LISTEN
+lsof -i -P -n | grep :80
+
+netstat -tulpn | grep LISTEN
+netstat -tulpn | grep :80
+
+yum install nmap
+sudo nmap -sT -O localhost
+```
+4. [process](https://www.ltsplus.com/linux/linux-ps-show-running-processes)
+```
+ps aux | less
+ps aux | grep rsync
+ps -u apache
+ps -U root -u root -N
+
+kill -9 12345 //PID
+killall -9 rsync //進程名稱
+```
 
 ###### 後話：個人感言
 在不依靠 Google、工具等輔助自己的情況下，真的是感到很挫折、很挫敗...
