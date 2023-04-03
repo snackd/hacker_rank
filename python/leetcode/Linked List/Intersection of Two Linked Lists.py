@@ -24,7 +24,6 @@ class Solution:
             l2 = l2.next
 
         diff = l1_len - l2_len
-practice
         l1, l2 = headA, headB
         if diff > 0:
             for _ in range(diff):
